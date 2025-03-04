@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bijoux & deco</title>
+    <title>Bijoux & Deco</title>
     <link href="./src/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -12,7 +12,7 @@
   </head>
   <body class="font-cormorant">
     <nav
-      class="fixed top-0 left-0 right-0 z-30 border border-b-white/20 bg-transparent"
+      class="fixed top-0 left-0 right-0 z-30 border border-b-white/20 bg-slate-300/50"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div class="flex items-center justify-between h-14">
@@ -29,27 +29,27 @@
           <div class="hidden lg:flex lg:items-center lg:space-x-10">
             <div class="flex space-x-10 font-sans font-semibold">
               <a
-                href="#"
+                href="#accueil"
                 class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
-                >Home</a
+                >Accueil</a
               >
               <a
-                href="#"
-                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
-                >Contact</a
-              >
-              <a
-                href="#"
+                href="#services"
                 class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
                 >Services</a
               >
               <a
-                href="#"
+                href="#gallery"
                 class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
-                >About</a
+                >Gallery</a
+              >
+              <a
+                href="#contact"
+                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
               >
             </div>
-            <p class="font-semibold text-slate-600">+261 34 09 246 94</p>
+            <p class="font-semibold text-slate-600">+261 34 22 555 80</p>
           </div>
           <div class="-mr-2 flex lg:hidden">
             <button
@@ -76,17 +76,22 @@
         <div id="mobile-menu" class="hidden lg:hidden">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              href="#"
+              href="#accueil"
               class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Accueil</a
             >
             <a
-              href="#"
+              href="#services"
               class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Services</a
             >
             <a
-              href="#"
+              href="#gallery"
+              class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
               class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Contact</a
             >
@@ -102,7 +107,8 @@
 
     <!-- section Accueil -->
     <section
-      class="relative bg-gradient-to-b from-blue-300 to-pink-300 text-gray-800 h-min lg:py-50 py-20"
+    id="accueil" 
+      class="relative bg-gradient-to-b from-blue-400 to-rose-400/70 text-gray-800 h-min lg:py-50 py-20"
     >
       <div class="flex flex-col items-center space-y-1 font-cormorant">
         <h1 class="lg:text-6xl text-2xl font-semibold text-white text-center">
@@ -206,7 +212,8 @@
     <!-- our services  -->
 
     <section
-      class="relative bg-gradient-to-b from-pink-300 to-blue-300 text-gray-800 h-min md:py-60 py-30 flex justify-center items-center"
+    id="services"
+      class="relative bg-gradient-to-b to-blue-400 from-rose-400/70 text-gray-800 h-min md:py-60 py-30 flex justify-center items-center"
     >
       <svg
         class="absolute -top-1 w-full"
@@ -321,7 +328,9 @@
     </section>
 
     <!-- our galery -->
-    <section class="flex flex-col mb-24">
+    <section 
+    id="gallery"
+    class="flex flex-col mb-24">
       <div class="flex flex-col items-center mx-2">
         <h2 class="font-cormorant text-2xl xl:text-4xl text-black">
           Our Gallery
@@ -424,7 +433,8 @@
     <!-- footer -->
 
     <footer
-      class="relative bg-gradient-to-b from-blue-300 to-pink-300 text-gray-800 h-min md:pt-60 py-20"
+    id="contact"
+      class="relative bg-gradient-to-b from-blue-400 to-rose-400/70 text-gray-800 h-min md:pt-60 py-20"
     >
       <svg
         class="absolute -top-1 w-full"
@@ -457,7 +467,7 @@
           <h4 class="text-xl font-semibold text-white">Follow Us</h4>
           <div class="flex justify-center gap-6 mt-4">
             <a
-              href="#"
+              href="https://web.facebook.com/profile.php?id=100054195565157"
               class="text-white hover:text-blue-400 transition duration-300"
             >
               <i class="fab fa-facebook-f"></i>

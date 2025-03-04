@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bijoux&deco</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="font-cormorant">
+    <nav
+      class="fixed top-0 left-0 right-0 z-30 border border-b-white/20 bg-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div class="flex items-center justify-between h-14">
+          <div class="md:ml-10 flex items-center space-x-4">
+            <!-- <a href="">
+              <img src="" alt="Logo du site" class="h-8" />
+            </a> -->
+            <h3
+              class="uppercase text-slate-600 font-bold lg:text-lg lg:leading-relaxed"
+            >
+              Bijoux & Déco Tamatave
+            </h3>
+          </div>
+          <div class="hidden lg:flex lg:items-center lg:space-x-10">
+            <div class="flex space-x-10 font-sans font-semibold">
+              <a
+                href="#"
+                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="text-slate-600 px-3 py-2 rounded-md text-sm font-medium"
+                >About</a
+              >
+            </div>
+            <p class="font-semibold text-slate-600">+261 34 09 246 94</p>
+          </div>
+          <div class="-mr-2 flex lg:hidden">
+            <button
+              id="menu-toggle"
+              class="text-gray-300 hover:text-slate-600 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Accueil</a
+            >
+            <a
+              href="#"
+              class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-slate-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="progress-bar"
+        class="fixed top-14 left-0 h-0.5 bg-gradient-to-l from-blue-500 to-pink-500 w-0 z-50"
+      ></div>
+    </nav>
+
+    <!-- section Accueil -->
+    <section
+      class="relative bg-gradient-to-b from-blue-300 to-pink-300 text-gray-800 h-min lg:py-50 py-20"
+    >
+      <div class="flex flex-col items-center space-y-1 font-cormorant">
+        <h1 class="lg:text-6xl text-2xl font-semibold text-white text-center">
+          Welcome to our website
+        </h1>
+        <p class="lg:text-lg lg:font-semibold text-sm text-white text-center">
+          We know the recipe for happiness and we are ready to share it with
+          you.
+        </p>
+        <div class="w-80">
+          <img src="../image/home_image.png" alt="" />
+        </div>
+      </div>
+      <!-- <svg class="absolute -bottom-1 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,240C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg> -->
+      <svg
+        class="absolute -bottom-1 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,213.3C672,192,768,160,864,144C960,128,1056,128,1152,133.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- sections why choose us -->
+    <section class="flex flex-col items-center h-min">
+      <div class="flex flex-col items-center mx-2">
+        <h2 class="font-cormorant lg:text-4xl text-xl">Why choose us?</h2>
+        <p class="font-cormorant lg:text-lg text-sm text-black/50 text-center">
+          You will choose us because we know how to surprise you, we always have
+          high quality products.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col space-y-8 mx-10 lg:flex-row lg:w-11/12 lg:space-x-6 lg:mx-auto lg:h-28 lg:items-center lg:space-y-0 my-12"
+      >
+        <div
+          class="flex space-x-1 h-full p-1 items-center rounded-3xl lg:w-1/3 transition-all duration-300 hover:bg-gray-300/50 hover:shadow-lg border border-gray-300"
+        >
+          <div class="w-1/5 bg-pink-300/40 rounded-full">
+            <img
+              src="../image/highquality.png"
+              alt="High-quality product image"
+              class="w-full"
+            />
+          </div>
+          <div class="flex flex-col space-y-1 w-4/5">
+            <h4 class="font-semibold text-black/95">High Quality</h4>
+            <p class="leading-4 text-black/50">
+              All our products are of high quality. We purchase products only
+              from verified suppliers.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex space-x-1 h-full p-1 items-center rounded-3xl lg:w-1/3 transition-all duration-300 hover:bg-gray-300/50 hover:shadow-lg border border-gray-300"
+        >
+          <div class="w-1/5">
+            <img
+              src="../image/variety.png"
+              alt="Variety image"
+              class="w-full"
+            />
+          </div>
+          <div class="flex flex-col space-y-1 w-4/5">
+            <h4 class="font-semibold text-black/95">Variety</h4>
+            <p class="leading-4 text-black/50">
+              We offer a variety of handmade cakes, chocolates, and ice creams.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex space-x-1 h-full p-1 items-center rounded-3xl lg:w-1/3 transition-all duration-300 hover:bg-gray-300/50 hover:shadow-lg border border-gray-300"
+        >
+          <div class="w-1/5 bg-pink-300/20 rounded-full">
+            <img
+              src="../image/delivery.png"
+              alt="Delivery image"
+              class="w-full"
+            />
+          </div>
+          <div class="flex flex-col space-y-1 w-4/5">
+            <h4 class="font-semibold text-black/95">Delivery</h4>
+            <p class="leading-4 text-black/50">
+              If you want to try our delices outside our pastry shop, we can
+              deliver them to you in a short time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our services  -->
+
+    <section
+      class="relative bg-gradient-to-b from-pink-300 to-blue-300 text-gray-800 h-min md:py-60 py-30 flex justify-center items-center"
+    >
+      <svg
+        class="absolute -top-1 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,213.3C672,192,768,160,864,144C960,128,1056,128,1152,133.3C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="flex flex-col items-center w-full">
+        <div class="flex flex-col items-center mx-2">
+          <h2 class="font-cormorant md:text-4xl text-xl text-white">
+            Our Services
+          </h2>
+          <p
+            class="font-cormorant md:text-lg text-sm text-black/50 text-center mt-2"
+          >
+            Here are the services we offer, including our delicious cakes,
+            chocolates, and ice creams, ready for you to enjoy.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col space-y-8 mx-auto lg:flex-row lg:w-full lg:justify-evenly lg:items-center my-12"
+        >
+          <article
+            class="relative flex flex-col max-h-[250px] max-w-[200px] items-center rounded-lg overflow-hidden group font-cormorant"
+          >
+            <div class="relative">
+              <img
+                src="../image/icecream.jpg"
+                alt="Ice Cream"
+                class="w-72 h-60"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              ></div>
+            </div>
+            <div
+              class="relative flex flex-col space-y-1 h-1/2 transform -translate-y-5 transition-transform duration-300 ease-in-out group-hover:-translate-y-32 bg-white z-10 pb-10 pt-1 px-4 rounded-lg"
+            >
+              <h3 class="font-semibold text-black/95">Ice Creams</h3>
+              <p class="leading-4 text-black/50">
+                Indulge in our creamy, handmade ice creams, crafted with the
+                finest ingredients and perfect for any occasion!
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="relative flex flex-col max-h-[250px] max-w-[200px] items-center rounded-lg overflow-hidden group font-cormorant"
+          >
+            <div class="relative">
+              <img
+                src="../image/chocolate.jpg"
+                alt="Chocolate Letters"
+                class="w-72 h-60"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              ></div>
+            </div>
+            <div
+              class="relative flex flex-col space-y-1 h-1/2 transform -translate-y-4 transition-transform duration-300 ease-in-out group-hover:-translate-y-36 bg-white z-10 pb-10 pt-1 px-4 rounded-lg"
+            >
+              <h3 class="font-semibold text-black/95">Chocolate Letters</h3>
+              <p class="leading-4 text-black/50">
+                Crafted with care, our custom chocolate letters make any
+                occasion extra special. Perfect for personal messages and unique
+                gifts!
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="relative flex flex-col max-h-[250px] max-w-[200px] items-center rounded-lg overflow-hidden group font-cormorant"
+          >
+            <div class="relative">
+              <img src="../image/cake.jpg" alt="Cake" class="w-72 h-60" />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              ></div>
+            </div>
+            <div
+              class="relative flex flex-col space-y-1 h-1/2 transform -translate-y-5 transition-transform duration-300 ease-in-out group-hover:-translate-y-32 bg-white z-10 pb-10 pt-1 px-4 rounded-lg"
+            >
+              <h3 class="font-semibold text-black/95">Cakes</h3>
+              <p class="leading-4 text-black/50">
+                Delicious and personalized cakes, crafted to make your special
+                moments even sweeter. Perfect for any occasion!
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <svg
+        class="absolute -bottom-1 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,213.3C672,192,768,160,864,144C960,128,1056,128,1152,133.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- our galery -->
+    <section class="flex flex-col mb-24">
+      <div class="flex flex-col items-center mx-2">
+        <h2 class="font-cormorant text-2xl xl:text-4xl text-black">
+          Our Gallery
+        </h2>
+        <p
+          class="font-cormorant text-sm xl:text-lg text-black/50 text-center mt-2"
+        >
+          Here you can get acquainted with our work
+        </p>
+      </div>
+
+      <!-- Section contenant les images -->
+      <div class="flex justify-center gap-4 mt-4 flex-wrap">
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery1.jpeg"
+            alt="Gallery Image 1"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery2.jpeg"
+            alt="Gallery Image 2"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery3.jpeg"
+            alt="Gallery Image 3"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery1.jpeg"
+            alt="Gallery Image 1"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery2.jpeg"
+            alt="Gallery Image 2"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery3.jpeg"
+            alt="Gallery Image 3"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div><div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery1.jpeg"
+            alt="Gallery Image 1"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery2.jpeg"
+            alt="Gallery Image 2"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery3.jpeg"
+            alt="Gallery Image 3"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div><div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery1.jpeg"
+            alt="Gallery Image 1"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery2.jpeg"
+            alt="Gallery Image 2"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="w-1/3 md:w-1/4 p-2">
+          <img
+            src="../image/gallery3.jpeg"
+            alt="Gallery Image 3"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer
+      class="relative bg-gradient-to-b from-blue-300 to-pink-300 text-gray-800 h-min md:pt-60 py-20"
+    >
+      <svg
+        class="absolute -top-1 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,213.3C672,192,768,160,864,144C960,128,1056,128,1152,133.3C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="container mx-auto text-center px-4">
+        <!-- Section d'Appel à l'action -->
+        <div class="mb-10">
+          <h3 class="text-3xl font-bold text-white">Ready to get started?</h3>
+          <p class="text-white/80 mt-2">
+            Join us and make a difference today. We are here to help you grow!
+          </p>
+          <a
+            href="#contact"
+            class="mt-4 inline-block px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
+            >Contact Us</a
+          >
+        </div>
+
+        <!-- Liens vers les réseaux sociaux -->
+        <div class="mb-10">
+          <h4 class="text-xl font-semibold text-white">Follow Us</h4>
+          <div class="flex justify-center gap-6 mt-4">
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition duration-300"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div id="contact" class="text-white/80">
+          <p>Have any questions? Reach out to us:</p>
+          <p>
+            Email:
+            <a href="mailto:info@example.com" class="hover:text-white"
+              >maherydn@gmail.com</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="#" class="hover:text-white">+2612255544</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      window.addEventListener("scroll", () => {
+    const progressBar = document.getElementById("progress-bar");
+
+    const scrollTop = window.scrollY; // Scroll actuel
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Hauteur totale scrollable
+
+    const scrollPercentage = (scrollTop / scrollHeight) * 100; // Calcul du pourcentage
+
+    progressBar.style.width = scrollPercentage + "%"; // Mise à jour de la barre
+});
+
+    </script>
+  </body>
+</html>

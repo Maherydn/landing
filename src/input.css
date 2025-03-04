@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* @layer theme {
+    .bg-start {
+      --tw-bg-opacity: 1;
+      background-color: #A6C1E1;
+    }
+    .bg-end {
+      --tw-bg-opacity: 1;
+      background-color: #FBC2EB;
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      src: url('/path/to/cormorant-garamond.woff2') format('woff2');
+    }
+  } */
+
+@theme {
+    --color-bgcolor1: #FF88DE;
+    --color-bgcolor2: #8DACFF;
+}
